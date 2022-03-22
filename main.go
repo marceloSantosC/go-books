@@ -76,7 +76,7 @@ type GBooksResponseItemAccessInfo struct {
 
 func main() {
 
-	port, err := strconv.Atoi(os.Getenv("SERVER_PORT"))
+	port, err := strconv.Atoi(os.Getenv("PORT"))
 	if err != nil {
 		port = 8080
 		log.Println("Port is not defined, starting at default port (8080)")
